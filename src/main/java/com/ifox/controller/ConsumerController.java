@@ -9,7 +9,7 @@ import com.ifox.service.CalculateClient;
 @RestController
 public class ConsumerController {
     @Autowired
-     CalculateClient calculateClient;
+    private CalculateClient calculateClient;
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public Integer add() {
